@@ -17,4 +17,8 @@ server_scripts {
     'server/**.lua'
 }
 
+shared_scripts {
+    '@ox_lib/init.lua',
+}
+
 shared_script 'config.lua'

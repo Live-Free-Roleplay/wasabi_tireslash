@@ -20,7 +20,11 @@ Config.allowedWeapons = {
 RegisterNetEvent('wasabi_tireslash:notify')
 AddEventHandler('wasabi_tireslash:notify', function(message)	
     -- Place notification system info here, ex: exports['mythic_notify']:SendAlert('inform', message)
-    ShowNotification(message)
+    --ShowNotification(message)
+    lib.notify({
+        description = message,
+        type = 'inform'
+    })
 end)
 
 Language = {
